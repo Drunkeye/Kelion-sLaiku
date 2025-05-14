@@ -835,6 +835,13 @@ a:focus {
 .footer_section a {
   color: inherit;
 }
+.travel-image {
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.border-dashed { --bs-border-style: dashed; }
 
 
 
