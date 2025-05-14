@@ -75,7 +75,7 @@
                   <a class="nav-link" href="service.html">Services</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="login.html">Login</a>
+                  <a class="nav-link" href="profile_edit.html">Edit Profile</a>
                 </li>
               </ul>
             </div>
@@ -105,21 +105,16 @@
             <div>
               <input type="text" placeholder="Password" />
             </div>
-            <div class="d-flex ">
-              <button>
-                Login
-              </button>
-            </div>
+            <div class="d-flex" style="gap: 10px;">
+  <button type="submit">
+    Login
+  </button>
+  <button type="button" onclick="location.href='register.html'">
+    Register
+  </button>
+</div>
           </form>
         </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap" style="width:100%;height:100%;"></div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -143,7 +138,7 @@
                       <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </div>
                     <p>
-                      Lorem Ipsum is simply dummy text
+                      Studentų g. 50
                     </p>
                   </div>
                 </a>
@@ -167,7 +162,7 @@
                       <i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
                     <p>
-                      demo@gmail.com
+                      ZasiesKeliones@gmail.com
                     </p>
                   </div>
                 </a>
@@ -218,9 +213,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <script src="js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
-  <!-- End Google Map -->
 
 
 </body>
