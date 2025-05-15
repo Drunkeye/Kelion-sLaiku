@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChronoVoyage – Time‑Travel Agency</title>
+  <style>
+    :root {
+      --brand: #26547c;
+      --accent: #ff6b6b;
+      --light: #f7f5f2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--light);
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--brand);
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 { margin-top: 0; font-size: 3rem; }
+    .cta {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+    .cta:hover { transform: scale(1.05); }
+    footer { text-align: center; padding: 1rem; font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+<header>
+  <h2>ChronoVoyage</h2>
+  <p>Your gateway to every when.</p>
+</header>
+
+<main>
+  <h1>Make History—Or Witness It</h1>
+  <p>Reserve a seat on our next temporal excursion or craft a bespoke voyage perfectly tailored to you.</p>
+  <a href="order.html"><button class="cta">Order a Time Trip</button></a>
+</main>
+
+<footer>&copy; 2025 ChronoVoyage. All rights reserved.</footer>
+</body>
+</html>
