@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Your ChronoVoyage</title>
+  <style>
+    :root {
+      --brand: #26547c;
+      --accent: #ff6b6b;
+      --light: #f7f5f2;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--light);color:#222;}
+    header{background:var(--brand);color:#fff;padding:1rem;text-align:center;}
+    h1{margin:1rem 0;}
+    .container{max-width:960px;margin:0 auto;padding:1rem;}
+    .tabs{display:flex;gap:1rem;justify-content:center;margin-bottom:1.5rem;}
+    .tabs button{flex:1;padding:0.75rem;border:none;border-radius:0.5rem;background:#ddd;cursor:pointer;font-size:1rem;transition:background 0.15s;}
+    .tabs button.active{background:var(--accent);color:#fff;}
+    .section{display:none;}
+    .section.active{display:block;animation:fade 0.3s ease;}
+    .trip-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem;}
+    .card{background:#fff;border-radius:0.5rem;padding:1rem;box-shadow:0 2px 6px rgba(0,0,0,0.08);display:flex;flex-direction:column;justify-content:space-between;}
+    .card h3{margin:0 0 0.5rem;}
+    .card p{font-size:0.9rem;flex:1;}
+    .radio-wrap{margin-top:0.5rem;}
+    form{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-bottom:1.5rem;}
+    label{display:flex;flex-direction:column;font-weight:600;font-size:0.9rem;gap:0.25rem;}
+    select,input[type=text]{padding:0.5rem;border:1px solid #bbb;border-radius:0.3rem;}
+    .actions{text-align:center;margin-top:1rem;}
+    .btn{background:var(--accent);color:#fff;border:none;padding:0.75rem 1.5rem;font-size:1rem;border-radius:0.5rem;cursor:pointer;transition:transform 0.15s;}
+    .btn:disabled{background:#aaa;cursor:not-allowed;}
+    .btn:hover:not(:disabled){transform:scale(1.05);}
+    @keyframes fade{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+  </style>
+</head>
+<body>
+<header>
+  <h2>ChronoVoyage &rsaquo; Order</h2>
+</header>
+
+<div class="container">
+  <h1>Plan Your Temporal Adventure</h1>
+
+  <div class="tabs">
+    <button id="listTab" class="active">Choose from List</button>
+    <button id="customTab">Create Your Own</button>
+  </div>
+
+  <!-- Choose from list -->
+  <section id="listSection" class="section active">
+    <div class="trip-list">
+      <div class="card">
+        <h3>Ancient Egypt Expedition</h3>
+        <p>Witness the construction of the Great Pyramid (c. 2560 BC).</p>
+        <div class="radio-wrap"><input type="radio" name="presetTrip" value="Ancient Egypt Expedition"></div>
+      </div>
+      <div class="card">
+        <h3>Renaissance Florence Retreat</h3>
+        <p>Attend a workshop with Leonardo da Vinci (1503).</p>
+        <div class="radio-wrap"><input type="radio" name="presetTrip" value="Renaissance Florence Retreat"></div>
+      </div>
+      <div class="card">
+        <h3>Moon Landing Front‑Row</h3>
+        <p>Stand at Kennedy Space Center for Apollo 11 launch (1969).</p>
+        <div class="radio-wrap"><input type="radio" name="presetTrip" value="Moon Landing Front‑Row"></div>
+      </div>
+      <div class="card">
+        <h3>Neo‑Tokyo 2200</h3>
+        <p>Experience the dazzling metropolis of the 23rd century.</p>
+        <div class="radio-wrap"><input type="radio" name="presetTrip" value="Neo‑Tokyo 2200"></div>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="proceedList" class="btn" disabled>Proceed to Payment</button>
+    </div>
+  </section>
+
+  <!-- Create your own -->
+  <section id="customSection" class="section">
+    <form id="customForm">
+      <label>
+        Time Period
+        <input type="text" name="period" placeholder="e.g. Jurassic Era, 140 million BC" required>
+      </label>
+      <label>
+        Time Machine
+        <select name="machine" required>
+          <option value="" disabled selected>Select machine</option>
+          <option value="ChronoPod Mk III">ChronoPod Mk III</option>
+          <option value="TARDIS‑Lite Capsule">TARDIS‑Lite Capsule</option>
+          <option value="Quantum Slipstream Shuttle">Quantum Slipstream Shuttle</option>
+        </select>
+      </label>
+      <label>
+        Clothes Package
+        <select name="clothes" required>
+          <option value="" disabled selected>Select style</option>
+          <option value="Era‑appropriate">Era‑appropriate</option>
+          <option value="Protective suit">Protective suit</option>
+          <option value="Stealth gear">Stealth gear</option>
+        </select>
+      </label>
+      <label>
+        Lodging
+        <select name="lodging" required>
+          <option value="" disabled selected>Select lodging</option>
+          <option value="Local inn / tavern">Local inn / tavern</option>
+          <option value="Mobile time capsule suite">Mobile time capsule suite</option>
+          <option value="No lodging – same‑day return">No lodging – same‑day return</option>
+        </select>
+      </label>
+    </form>
+    <div class="actions">
+      <button id="proceedCustom" class="btn" disabled>Proceed to Payment</button>
+    </div>
+  </section>
+</div>
+
+<script>
+  // Tab toggling
+  const listTab = document.getElementById('listTab');
+  const customTab = document.getElementById('customTab');
+  const listSection = document.getElementById('listSection');
+  const customSection = document.getElementById('customSection');
+
+  listTab.addEventListener('click', () => switchTab('list'));
+  customTab.addEventListener('click', () => switchTab('custom'));
+
+  function switchTab(tab) {
+    const isList = tab === 'list';
+    listTab.classList.toggle('active', isList);
+    customTab.classList.toggle('active', !isList);
+    listSection.classList.toggle('active', isList);
+    customSection.classList.toggle('active', !isList);
+  }
+
+  // List selection logic
+  const listRadios = document.querySelectorAll('input[name="presetTrip"]');
+  const proceedList = document.getElementById('proceedList');
+  listRadios.forEach(r => r.addEventListener('change', () => proceedList.disabled = false));
+  proceedList.addEventListener('click', () => {
+    const selected = Array.from(listRadios).find(r => r.checked)?.value;
+    localStorage.setItem('tripSummary', selected);
+    window.location.href = 'payment.html';
+  });
+
+  // Custom form logic
+  const customForm = document.getElementById('customForm');
+  const proceedCustom = document.getElementById('proceedCustom');
+  customForm.addEventListener('input', () => {
+    proceedCustom.disabled = !customForm.checkValidity();
+  });
+  proceedCustom.addEventListener('click', () => {
+    if (!customForm.reportValidity()) return;
+    const data = Object.fromEntries(new FormData(customForm));
+    const summary = `Custom Trip → ${data.period} | Machine: ${data.machine} | Clothes: ${data.clothes} | Lodging: ${data.lodging}`;
+    localStorage.setItem('tripSummary', summary);
+    window.location.href = 'payment.html';
+  });
+</script>
+</body>
+</html>
