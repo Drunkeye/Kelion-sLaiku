@@ -198,19 +198,46 @@
   background-color: #E0EEFF; /* example: a custom orange */
 }
 
-  .btn input[type="radio"] {
-    display: none;
-  }
-  .btn.active {
-    transition: background-color 0.3s ease;
-  }
-  .nav-link.active, .nav-item.active .nav-link {
-  color: #FCDC54 !important;      /* Text color when active */
-  background-color: #8AA0D0;
-  border: 2px solid #F8F9D7;
-  font-weight: bold;               /* Optional: bold text */
-  border-radius: 4px;              /* Optional: rounded corners */
+  /* Hide radio buttons inside buttons */
+.btn input[type="radio"] {
+  display: none;
 }
+
+/* Style for selected/active button */
+.btn.active {
+  background-color: #FCDC54;
+  color: #1c1c1c;
+  border: 2px solid #8AA0D0;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for quiz buttons (before active) */
+.btn:hover {
+  background-color: #FFE588;  /* lighter yellow on hover */
+  color: #000000;
+  border: 2px solid #B0C4DE;
+  cursor: pointer;
+}
+
+/* Active nav link */
+.nav-link.active,
+.nav-item.active .nav-link {
+  color: #FCDC54 !important;
+  background-color: #8AA0D0 !important;
+  border: 2px solid #F8F9D7;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  background-color: #DCE6FF;  /* light blue on hover */
+  color: #34578C !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 
 .custom-quiz-btn {
   background-color: #F8F9D7;
