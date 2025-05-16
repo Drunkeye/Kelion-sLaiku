@@ -503,8 +503,8 @@ a:focus {
 }
 
 .service_section .box .img-box {
-  width: 65px;
-  height: 65px;
+  width: 250px;
+  height: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,6 +646,26 @@ a:focus {
   background-color: #0355cc;
   outline: none;
   margin: 0 20px;
+  color: #ffffff;
+}
+.client_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+}
+
+.client_section .btn-box a {
+  display: inline-block;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  background-color: #0355cc;
+  border: 1px solid #0355cc;
+  border-radius: 0;
   color: #ffffff;
 }
 
