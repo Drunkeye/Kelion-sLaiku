@@ -32,10 +32,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
-                <li class="nav-item active"><a class="nav-link" href="login.html">login</a></li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Pagrindinis <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html">Apie</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="order.html">Užsakymas</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="keliones.html">Kelionės</a>
+                </li>
+                 <li class="nav-item active">
+                  <a class="nav-link" href="laiko_masinos.html">Laiko mašinos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="laikotarpiai.html">Laikotarpiai</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="travel_rules.html">Taisyklės</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="travel_recommendations.html">Rekomendacijos</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="login.html">Prisijungti</a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -53,19 +76,19 @@
         <div class="col-md-8">
           <form action="profile_update.php" method="POST" enctype="multipart/form-data">
             <div>
-              <input type="text" name="name" placeholder="Full Name" required />
+              <input type="text" name="name" placeholder="Pilnas Vardas" required />
             </div>
             <div>
               <input type="email" name="email" placeholder="Email" required />
             </div>
             <div>
-              <input type="password" name="current_password" placeholder="Current Password (only if changing)" />
+              <input type="password" name="current_password" placeholder="Dabartinis slaptažodis (Jei keičiamas)" />
             </div>
             <div>
-              <input type="password" name="new_password" placeholder="New Password" />
+              <input type="password" name="new_password" placeholder="Naujas slaptažodis (Jei keičiamas)" />
             </div>
             <div>
-              <input type="password" name="confirm_password" placeholder="Confirm New Password" />
+              <input type="password" name="confirm_password" placeholder="Patvirtinti naują slaptažodį" />
             </div>
             <div>
               <label for="profile_picture">Profile Picture:</label>
@@ -115,8 +138,7 @@
 
   <footer class="footer_section">
     <div class="container">
-      <p>&copy; <span id="displayDateYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a></p>
+      <p>&copy; <span id="displayDateYear"></span> All Rights Reserved By Žasies keliones</p>
     </div>
   </footer>
 

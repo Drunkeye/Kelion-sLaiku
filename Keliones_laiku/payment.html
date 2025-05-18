@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Inance - Mokėjimas</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .payment-option {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+   background-color: white;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-option img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the logo scales to fit inside without distortion */
+}
+
+    .payment-option.selected {
+      border-color: #28a745;
+      background-color: #e6f9ec;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_nav">
+            <a href=""><i class="fa fa-phone" aria-hidden="true"></i><span>Call : +01 123455678990</span></a>
+            <a href=""><i class="fa fa-envelope" aria-hidden="true"></i><span>Email : ZasiesKeliones@gmail.com</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html"><span>Laukinės Žąsies Kelionės</span></a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="order_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Pasirinkite mokėjimo būdą</h2>
+          <p>Pasirinkite savo banką ar mokėjimo platformą</p>
+        </div>
+
+        <form id="paymentForm">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="swedbank">
+                <img src="img/swedbank.png" alt="Swedbank">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="seb">
+                <img src="img/seb.png" alt="SEB">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="siauliu">
+                <img src="img/slbankas.png" alt="Šiaulių bankas">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="luminor">
+                <img src="img/luminor.png" alt="Luminor">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="revolut">
+                <img src="img/revolut.png" alt="Revolut">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="paypal">
+                <img src="img/PayPal.svg.webp" alt="PayPal">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="creditcard">
+                <img src="img/mastercard.png" alt="Kredito kortelė">
+              </div>
+            </div>
+          </div>
+
+          <input type="hidden" id="bankSelect" required>
+
+          <div class="form-group mt-4">
+            <label for="email">El. paštas</label>
+            <input type="email" class="form-control" id="email" placeholder="Įveskite savo el. paštą" required>
+          </div>
+
+         <div class="form-group">
+            <label for="phone">Telefono numeris</label>
+           <input type="tel" class="form-control" id="phone" placeholder="Įveskite savo telefono numerį" pattern="^\+?[0-9]*$" required>
+          </div>
+
+          <button type="submit" class="btn btn-success">Patvirtinti mokėjimą</button>
+        </form>
+
+        <div id="confirmation" class="mt-4" style="display: none;">
+          <h4 class="text-success">Mokėjimas pavyko! Ačiū, kad pasirinkote mus.</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <div class="container">
+        <p>© <span id="displayYear"></span> Visos teisės saugomos.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('.payment-option').forEach(option => {
+      option.addEventListener('click', function () {
+        document.querySelectorAll('.payment-option').forEach(opt => opt.classList.remove('selected'));
+        this.classList.add('selected');
+        document.getElementById('bankSelect').value = this.getAttribute('data-value');
+      });
+    });
+
+    document.getElementById('paymentForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!document.getElementById('bankSelect').value) {
+        alert('Pasirinkite mokėjimo būdą.');
+        return;
+      }
+      document.getElementById('paymentForm').style.display = 'none';
+      document.getElementById('confirmation').style.display = 'block';
+    });
+  </script>
+
+  <script>
+  document.getElementById('phone').addEventListener('input', function (e) {
+    let cleaned = this.value.replace(/[^0-9+]/g, '');
+    // leidžia tik vieną "+"
+    let plusIndex = cleaned.indexOf('+');
+    if (plusIndex > 0) cleaned = cleaned.replace(/\+/g, '');
+    this.value = cleaned;
+  });
+</script>
+</body>
+
+</html>
