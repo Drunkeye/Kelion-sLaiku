@@ -60,9 +60,7 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.html" style="color: #4a148c;  href="index.html">
-              <span>
-                Logo
-              </span>
+              <img src="img/logotipas.png" alt="Logo" class="rotating-logo" style="height: 100px; margin-right: 10px;">
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -253,6 +251,7 @@
 .custom-quiz-btn.active,
 .custom-quiz-btn:has(input:checked) {
   background-color: #FCDC54;
+  border: 2px solid #F8F9D7;
   font-weight: bold;
 }
 .custom-quiz-btn2 {
@@ -270,6 +269,14 @@
 .custom-quiz-btn2:has(input:checked) {
   background-color: #FCDC54;
   font-weight: bold;
+}
+ .rotating-logo {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 </style>
