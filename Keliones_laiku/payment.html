@@ -1,62 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ChronoVoyage – Payment</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Inance - Mokėjimas</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
   <style>
-    :root {
-      --brand: #26547c;
-      --accent: #ff6b6b;
-      --light: #f7f5f2;
+    .payment-option {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+   background-color: white;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-option img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures the logo scales to fit inside without distortion */
+}
+
+    .payment-option.selected {
+      border-color: #28a745;
+      background-color: #e6f9ec;
     }
-    body{margin:0;font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--light);color:#222;display:flex;flex-direction:column;min-height:100vh;}
-    header{background:var(--brand);color:#fff;padding:1rem;text-align:center;}
-    main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem;text-align:center;}
-    .card{background:#fff;max-width:480px;width:100%;padding:2rem;border-radius:0.75rem;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
-    h2{margin-top:0;}
-    label{display:flex;flex-direction:column;text-align:left;font-weight:600;margin-bottom:1rem;}
-    input[type=text],input[type=number]{padding:0.5rem;border:1px solid #bbb;border-radius:0.3rem;}
-    .btn{background:var(--accent);color:#fff;border:none;padding:0.75rem 1.5rem;font-size:1rem;border-radius:0.5rem;cursor:pointer;transition:transform 0.15s;}
-    .btn:hover{transform:scale(1.05);}
   </style>
 </head>
+
 <body>
-<header>
-  <h2>ChronoVoyage &rsaquo; Payment</h2>
-</header>
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_nav">
+            <a href=""><i class="fa fa-phone" aria-hidden="true"></i><span>Call : +01 123455678990</span></a>
+            <a href=""><i class="fa fa-envelope" aria-hidden="true"></i><span>Email : ZasiesKeliones@gmail.com</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html"><span>Laukinės Žąsies Kelionės</span></a>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<main>
-  <div class="card">
-    <h2>Almost There!</h2>
-    <p id="summary"></p>
+    <section class="order_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Pasirinkite mokėjimo būdą</h2>
+          <p>Pasirinkite savo banką ar mokėjimo platformą</p>
+        </div>
 
-    <form onsubmit="event.preventDefault();alert('Payment processing prototype – thank you!');window.location.href='index.html';">
-      <label>
-        Cardholder Name
-        <input type="text" required />
-      </label>
-      <label>
-        Card Number
-        <input type="number" placeholder="0000 0000 0000 0000" required />
-      </label>
-      <label>
-        Expiry Date
-        <input type="text" placeholder="MM/YY" required />
-      </label>
-      <label>
-        CVV
-        <input type="number" placeholder="123" required />
-      </label>
-      <button class="btn" type="submit">Pay &amp; Confirm</button>
-    </form>
+        <form id="paymentForm">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="swedbank">
+                <img src="img/swedbank.png" alt="Swedbank">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="seb">
+                <img src="img/seb.png" alt="SEB">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="siauliu">
+                <img src="img/slbankas.png" alt="Šiaulių bankas">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="luminor">
+                <img src="img/luminor.png" alt="Luminor">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="revolut">
+                <img src="img/revolut.png" alt="Revolut">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="paypal">
+                <img src="img/PayPal.svg.webp" alt="PayPal">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+              <div class="payment-option" data-value="creditcard">
+                <img src="img/mastercard.png" alt="Kredito kortelė">
+              </div>
+            </div>
+          </div>
+
+          <input type="hidden" id="bankSelect" required>
+
+          <div class="form-group mt-4">
+            <label for="email">El. paštas</label>
+            <input type="email" class="form-control" id="email" placeholder="Įveskite savo el. paštą" required>
+          </div>
+
+         <div class="form-group">
+            <label for="phone">Telefono numeris</label>
+           <input type="tel" class="form-control" id="phone" placeholder="Įveskite savo telefono numerį" pattern="^\+?[0-9]*$" required>
+          </div>
+
+          <button type="submit" class="btn btn-success">Patvirtinti mokėjimą</button>
+        </form>
+
+        <div id="confirmation" class="mt-4" style="display: none;">
+          <h4 class="text-success">Mokėjimas pavyko! Ačiū, kad pasirinkote mus.</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <div class="container">
+        <p>© <span id="displayYear"></span> Visos teisės saugomos.</p>
+      </div>
+    </footer>
   </div>
-</main>
 
-<script>
-  // Display summary pulled from localStorage
-  const summaryText = localStorage.getItem('tripSummary') || 'Selected trip will appear here.';
-  document.getElementById('summary').textContent = summaryText;
+  <script>
+    document.querySelectorAll('.payment-option').forEach(option => {
+      option.addEventListener('click', function () {
+        document.querySelectorAll('.payment-option').forEach(opt => opt.classList.remove('selected'));
+        this.classList.add('selected');
+        document.getElementById('bankSelect').value = this.getAttribute('data-value');
+      });
+    });
+
+    document.getElementById('paymentForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!document.getElementById('bankSelect').value) {
+        alert('Pasirinkite mokėjimo būdą.');
+        return;
+      }
+      document.getElementById('paymentForm').style.display = 'none';
+      document.getElementById('confirmation').style.display = 'block';
+    });
+  </script>
+
+  <script>
+  document.getElementById('phone').addEventListener('input', function (e) {
+    let cleaned = this.value.replace(/[^0-9+]/g, '');
+    // leidžia tik vieną "+"
+    let plusIndex = cleaned.indexOf('+');
+    if (plusIndex > 0) cleaned = cleaned.replace(/\+/g, '');
+    this.value = cleaned;
+  });
 </script>
 </body>
+
 </html>
