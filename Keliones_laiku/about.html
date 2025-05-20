@@ -101,91 +101,6 @@
     </header>
     <!-- end header section -->
   </div>
-
-  <section class="quiz_section layout_padding">
-  <div class="container">
-    <div class="heading_container mb-4">
-      <h2 class="text-center">Sužinok kokio tipo keliautojas esi tu!</h2>
-      <p class="text-center text-muted">Atsakyk į klausimus ir rask tobulą kelionę sau!</p>
-    </div>
-
-    <form id="funQuizForm">
-      <!-- Questions -->
-      <div class="card mb-3 shadow-sm">
-        <div class="card-body">
-           <h5 class="card-title">1. Pasirink mėgstamiausią pinigėnų mini-žaidimą</h5>
-           <div class="btn-group-vertical w-100" role="group">
-          <label class="btn custom-quiz-btn">
-        <input type="radio" name="q1" value="1" autocomplete="off"> Pagalba paštininkei
-      </label>
-      <label class="btn custom-quiz-btn">
-        <input type="radio" name="q1" value="2" autocomplete="off"> Obuolių gaudymas
-      </label>
-      <label class="btn custom-quiz-btn">
-        <input type="radio" name="q1" value="3" autocomplete="off"> Fermos gyvūlių maitinimas
-      </label>
-    </div>
-  </div>
-</div>
-
-      <div class="card mb-3 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">2. Pasirink labiausiai patinkantį valgymo laiką</h5>
-          <div class="btn-group-vertical w-100" role="group">
-            <label class="btn custom-quiz-btn"><input type="radio" name="q2" value="1" autocomplete="off"> Pusryčiai</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q2" value="2"> Pietūs</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q2" value="3"> Vakarienė</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">3. Pasirink vieną vabzdį, kurį nori sunaikinti</h5>
-          <div class="d-flex flex-column gap-2">
-            <label class="btn custom-quiz-btn"><input type="radio" name="q3" value="1"> Uodai</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q3" value="2"> Boružės</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q3" value="3"> Musės</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">4. Pasirink labiausiai mėgstamą bulvių pateikimo formą</h5>
-          <div class="d-flex flex-column gap-2">
-            <label class="btn custom-quiz-btn"><input type="radio" name="q4" value="1"> Bulvių košė</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q4" value="2"> Keptos bulvės</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q4" value="3"> Virtos bulvės</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="card mb-3 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">5. Kaip šiandien jautiesi?</h5>
-          <div class="d-flex flex-column gap-2">
-            <label class="btn custom-quiz-btn"><input type="radio" name="q5" value="1"> Puikiai</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q5" value="2"> Nuostabiai</label>
-            <label class="btn custom-quiz-btn"><input type="radio" name="q5" value="3"> Nepakartojamai</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-4">
-        <button type="button" class="btn custom-quiz-btn2 px-4 py-2" onclick="submitFunQuiz()">Pabaigti</button>
-      </div>
-    </form>
-    
-<div class="text-center mt-4">
- <a href="#" style="color: #6E85B7;" onclick="showStoredResult(); return false;">Matyti savo rezultatus</a>
-</div>
-
-
-    <div id="funQuizResult" class="alert alert-info text-center mt-3 d-none"></div>
-  </div>
-</section>
-
 <style>
   .header_top {
   background-color: #6E85B7 !important; 
@@ -280,6 +195,92 @@
 }
 
 </style>
+
+  <section class="quiz_section layout_padding">
+  <div class="container">
+    <div class="heading_container mb-4">
+      <h2 class="text-center">Sužinok kokio tipo keliautojas esi tu!</h2>
+      <p class="text-center text-muted">Atsakyk į klausimus ir rask tobulą kelionę sau!</p>
+    </div>
+
+    <form id="funQuizForm">
+      <!-- Questions -->
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+           <h5 class="card-title">1. Pasirink mėgstamiausią pinigėnų mini-žaidimą</h5>
+           <div class="btn-group-vertical w-100" role="group">
+          <label class="btn custom-quiz-btn">
+        <input type="radio" name="q1" value="1" autocomplete="off"> Pagalba paštininkei
+      </label>
+      <label class="btn custom-quiz-btn">
+        <input type="radio" name="q1" value="2" autocomplete="off"> Obuolių gaudymas
+      </label>
+      <label class="btn custom-quiz-btn">
+        <input type="radio" name="q1" value="3" autocomplete="off"> Fermos gyvūlių maitinimas
+      </label>
+    </div>
+  </div>
+</div>
+
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">2. Pasirink labiausiai patinkantį valgymo laiką</h5>
+          <div class="btn-group-vertical w-100" role="group">
+            <label class="btn custom-quiz-btn"><input type="radio" name="q2" value="1" autocomplete="off"> Pusryčiai</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q2" value="2"> Pietūs</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q2" value="3"> Vakarienė</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">3. Pasirink vieną vabzdį, kurį nori sunaikinti</h5>
+          <div class="d-flex flex-column gap-2">
+            <label class="btn custom-quiz-btn"><input type="radio" name="q3" value="1"> Uodai</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q3" value="2"> Boružės</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q3" value="3"> Musės</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">4. Pasirink labiausiai mėgstamą bulvių pateikimo formą</h5>
+          <div class="d-flex flex-column gap-2">
+            <label class="btn custom-quiz-btn"><input type="radio" name="q4" value="1"> Bulvių košė</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q4" value="2"> Keptos bulvės</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q4" value="3"> Virtos bulvės</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">5. Kaip šiandien jautiesi?</h5>
+          <div class="d-flex flex-column gap-2">
+            <label class="btn custom-quiz-btn"><input type="radio" name="q5" value="1"> Puikiai</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q5" value="2"> Nuostabiai</label>
+            <label class="btn custom-quiz-btn"><input type="radio" name="q5" value="3"> Nepakartojamai</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="button" class="btn custom-quiz-btn2 px-4 py-2" onclick="submitFunQuiz()">Pabaigti</button>
+      </div>
+    </form>
+    
+<div class="text-center mt-4">
+ <a href="#" style="color: #6E85B7;" onclick="showStoredResult(); return false;">Matyti savo rezultatus</a>
+</div>
+
+
+    <div id="funQuizResult" class="alert alert-info text-center mt-3 d-none"></div>
+  </div>
+</section>
+
+
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
