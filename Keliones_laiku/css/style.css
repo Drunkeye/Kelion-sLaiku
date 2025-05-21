@@ -117,7 +117,7 @@ a:focus {
 }
 
 .header_section .header_top .contact_nav a i {
-  color: #ff8a1d;
+  color: #F8F9D7;
 }
 
 .header_section .header_bottom {
@@ -134,7 +134,7 @@ a:focus {
 }
 
 .navbar-brand span {
-  color: #0355cc;
+  color: #FCDC54;
   text-transform: uppercase;
 }
 
@@ -153,7 +153,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #0355cc;
+  color: #FCDC54;
 }
 
 .custom_nav-container .form-inline .nav_search-btn {
@@ -165,7 +165,7 @@ a:focus {
 }
 
 .custom_nav-container .form-inline .nav_search-btn:hover {
-  color: #0355cc;
+  color: #FCDC54;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -272,7 +272,7 @@ a:focus {
 }
 
 .quote_btn-container a:hover {
-  color: #ff8a1d;
+  color: #F8F9D7;
 }
 
 /*end header section*/
@@ -309,7 +309,7 @@ a:focus {
 .slider_section .detail-box h1 {
   font-weight: bold;
   margin-bottom: 25px;
-  color: #0355cc;
+  color: #000000;
 }
 
 .slider_section .detail-box p {
@@ -322,8 +322,8 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #ff8a1d;
-  border: 1px solid #ff8a1d;
+  background-color: #F8F9D7;
+  border: 1px solid #F8F9D7;
   border-radius: 5px;
   color: #ffffff;
   margin-top: 15px;
@@ -331,7 +331,7 @@ a:focus {
 
 .slider_section .detail-box a:hover {
   background-color: transparent;
-  color: #ff8a1d;
+  color: #F8F9D7;
 }
 
 .slider_section .img-box img {
@@ -400,7 +400,7 @@ a:focus {
 }
 
 .feature_section .feature_container .box:hover, .feature_section .feature_container .box.active {
-  background-color: #ff8a1d;
+  background-color: #F8F9D7;
   color: #ffffff;
 }
 
@@ -433,15 +433,15 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #0355cc;
-  border: 1px solid #0355cc;
+  background-color: #FCDC54;
+  border: 1px solid #FCDC54;
   border-radius: 2px;
   color: #ffffff;
 }
 
 .about_section .detail-box a:hover {
   background-color: transparent;
-  color: #0355cc;
+  color: #FCDC54;
 }
 
 .about_section .img-box img {
@@ -465,7 +465,7 @@ a:focus {
 .professional_section .detail-box h2 {
   text-transform: uppercase;
   font-weight: bold;
-  color: #0355cc;
+  color: #FCDC54;
 }
 
 .professional_section .detail-box p {
@@ -478,15 +478,15 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #ff8a1d;
-  border: 1px solid #ff8a1d;
+  background-color: #F8F9D7;
+  border: 1px solid #F8F9D7;
   border-radius: 2px;
   color: #ffffff;
 }
 
 .professional_section .detail-box a:hover {
   background-color: transparent;
-  color: #ff8a1d;
+  color: #F8F9D7;
 }
 
 .service_section {
@@ -547,8 +547,8 @@ a:focus {
 }
 
 .service_section .box:hover {
-  background-color: #ff8a1d;
-  color: #ffffff;
+  background-color: #F8F9D7;
+  color: #FCDC54;
 }
 
 .service_section .box:hover .img-box img {
@@ -571,15 +571,15 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #0355cc;
-  border: 1px solid #0355cc;
+  background-color: #FCDC54;
+  border: 1px solid #FCDC54;
   border-radius: 0;
   color: #ffffff;
 }
 
 .service_section .btn-box a:hover {
   background-color: transparent;
-  color: #0355cc;
+  color: #FCDC54;
 }
 
 .client_section .heading_container {
@@ -654,7 +654,7 @@ a:focus {
 .client_section .owl-carousel .owl-nav button {
   width: 50px;
   height: 50px;
-  background-color: #0355cc;
+  background-color: #FCDC54;
   outline: none;
   margin: 0 20px;
   color: #ffffff;
@@ -674,8 +674,8 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #0355cc;
-  border: 1px solid #0355cc;
+  background-color: #FCDC54;
+  border: 1px solid #FCDC54;
   border-radius: 0;
   color: #ffffff;
 }
@@ -723,8 +723,8 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 55px;
-  background-color: #0355cc;
-  border: 1px solid #0355cc;
+  background-color: #FCDC54;
+  border: 1px solid #FCDC54;
   border-radius: 0;
   color: #ffffff;
   margin-top: 15px;
@@ -732,7 +732,7 @@ a:focus {
 
 .contact_section button:hover {
   background-color: transparent;
-  color: #0355cc;
+  color: #FCDC54;
 }
 
 .contact_section .map_container {
@@ -777,7 +777,7 @@ a:focus {
 
 .info_section a {
   margin: 0 5px;
-  color: #0355cc;
+  color: #FCDC54;
 }
 
 .info_section a i {
@@ -785,7 +785,7 @@ a:focus {
 }
 
 .info_section a:hover {
-  color: #ff8a1d;
+  color: #F8F9D7;
 }
 
 .info_items a {
@@ -815,7 +815,7 @@ a:focus {
   background-position: center;
   text-align: center;
   line-height: 80px;
-  background-color: #0355cc;
+  background-color: #FCDC54;
   color: #ffffff;
 }
 
@@ -831,7 +831,7 @@ a:focus {
 }
 
 .info_items .item:hover .img-box {
-  background-color: #ff8a1d;
+  background-color: #F8F9D7;
 }
 
 .info_items {
@@ -852,7 +852,7 @@ a:focus {
 
 /* footer section*/
 .footer_section {
-  background-color: #0a0f43;
+  background-color: #6E85B7;
 }
 
 .footer_section p {
