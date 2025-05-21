@@ -4,6 +4,17 @@ body {
   color: #040000;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  color: #040000;
+  background-color: #E0EEFF; /* Change this to any background color you prefer */
+  /* Or use a background image:
+  background: url('your-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  */
+}
+
+
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -89,7 +100,7 @@ a:focus {
 
 .header_section .header_top {
   padding: 15px 0;
-  background-color: #000000;
+  background-color: #6E85B7;
 }
 
 .header_section .header_top .contact_nav {
