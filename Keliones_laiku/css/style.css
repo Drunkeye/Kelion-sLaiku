@@ -654,7 +654,7 @@ a:focus {
 .client_section .owl-carousel .owl-nav button {
   width: 50px;
   height: 50px;
-  background-color: #FCDC54;
+  background-color: #6E85B7;
   outline: none;
   margin: 0 20px;
   color: #ffffff;
@@ -674,8 +674,8 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #FCDC54;
-  border: 1px solid #FCDC54;
+  background-color: #6E85B7;
+  border: 1px solid #6E85B7;
   border-radius: 0;
   color: #ffffff;
 }
@@ -723,8 +723,8 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 55px;
-  background-color: #FCDC54;
-  border: 1px solid #FCDC54;
+  background-color: #6E85B7;
+  border: 1px solid #6E85B7;
   border-radius: 0;
   color: #ffffff;
   margin-top: 15px;
@@ -732,7 +732,7 @@ a:focus {
 
 .contact_section button:hover {
   background-color: transparent;
-  color: #FCDC54;
+  color: #6E85B7;
 }
 
 .contact_section .map_container {
