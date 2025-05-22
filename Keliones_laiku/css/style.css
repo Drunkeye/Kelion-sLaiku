@@ -571,15 +571,15 @@ a:focus {
   font-family: 'Merriweather Sans', sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
-  background-color: #FCDC54;
-  border: 1px solid #FCDC54;
+  background-color: #6E85B7;
+  border: 1px solid #6E85B7;
   border-radius: 0;
   color: #ffffff;
 }
 
 .service_section .btn-box a:hover {
   background-color: transparent;
-  color: #FCDC54;
+  color: #6E85B7;
 }
 
 .client_section .heading_container {
