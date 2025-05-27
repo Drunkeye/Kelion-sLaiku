@@ -5,6 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="857d3ff1-906b-4b78-bf8b-3bfa09c12590" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/astronaut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/astronaut.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/castle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/cottage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/egypt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/future.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/future1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/greek.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/renaissance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/sky.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Keliones_laiku/img/tent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Keliones_laiku/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/Keliones_laiku/order.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,30 +55,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.atsiliepimai.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.login.html.executor": "Run",
-    "JavaScript Debug.order.html.executor": "Run",
-    "JavaScript Debug.payment.html.executor": "Run",
-    "JavaScript Debug.profile_edit.html.executor": "Run",
-    "JavaScript Debug.temp.html.executor": "Run",
-    "JavaScript Debug.travel_recommendations.html.executor": "Run",
-    "JavaScript Debug.wardrobe.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Justas__Branch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "C:/Users/Justas/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/22.16.0/node",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.atsiliepimai.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.login.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.order.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.payment.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.profile_edit.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.temp.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.travel_recommendations.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.wardrobe.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Justas__Branch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;C:/Users/Justas/AppData/Roaming/JetBrains/WebStorm2024.3/node/versions/22.16.0/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Justas\Documents\GitHub\Kelion-sLaiku\Keliones_laiku\img" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +101,7 @@
       <updated>1747250831604</updated>
       <workItem from="1747250832722" duration="1411000" />
       <workItem from="1748341441966" duration="5143000" />
+      <workItem from="1748357837152" duration="2687000" />
     </task>
     <servers />
   </component>
