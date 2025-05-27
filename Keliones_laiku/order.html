@@ -16,8 +16,8 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  
-  
+
+
 
   <title>Laukinės Žąsies Kelionės</title>
 
@@ -36,7 +36,7 @@
 </head>
 
 <body>
-  
+
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -108,7 +108,7 @@
   </div>
 <style>
   .header_top {
-  background-color: #6E85B7 !important; 
+  background-color: #6E85B7 !important;
   color: #333333; /* Dark text for contrast */
 }
 
@@ -169,7 +169,7 @@
   </div>
 <style>
   .header_top {
-  background-color: #6E85B7 !important; 
+  background-color: #6E85B7 !important;
   color: #333333; /* Dark text for contrast */
 }
 
@@ -223,95 +223,221 @@
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+  .custom-carousel .item {
+    text-align: center;
+    padding: 10px;
+  }
 
-</style>
-    <!-- end header section -->
+  .custom-carousel img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
 
-    <!-- order section -->
-    <section class="order_section layout_padding">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>Užsakykite savo laiko kelionę</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <h4><br><br>Pasirinkite kelionę iš sąrašo</h4>
-            <a href="keliones.html" class="btn btn-primary">Peržiūrėti keliones</a>
+  .custom-carousel .description {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .owl-nav button.owl-prev,
+  .owl-nav button.owl-next {
+    font-size: 4rem;
+    color: #4a148c;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
+  .owl-nav button.owl-prev {
+    left: -50px;
+  }
+
+  .owl-nav button.owl-next {
+    right: -50px;
+  }
+
+  .owl-nav button:hover {
+    color: #8AA0D0;
+  }
+
+  .form-group > label {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+
+  .owl-carousel .owl-nav {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next {
+    background-color: #FCDC54;
+    color: #1c1c1c;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #8AA0D0;
+    pointer-events: all;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+  }
+
+  .continue-btn {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  </style>
+
+
+
+
+
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Sukurkite savo kelionę</h2>
+
+    <form id="customTripForm">
+      <div class="form-group">
+        <label>Laikotarpis</label>
+        <div class="owl-carousel custom-carousel owl-theme" id="periodCarousel">
+          <div class="item">
+            <img src="images/s1.png" alt="">
+            <div class="description">Senovės Egiptas</div>
           </div>
-          <div class="col-md-6">
-            <h4><br><br>Sukurkite savo kelionę</h4>
-            <form id="customTripForm">
-              <div class="form-group">
-                <label>Laikotarpis</label>
-                <select class="form-control" id="timePeriod" required>
-                  <option value="">Pasirinkite</option>
-                  <option value="Senovės Egiptas">Senovės Egiptas</option>
-                  <option value="Antikinė Graikija">Antikinė Graikija</option>
-                  <option value="Romos Imperijos Amžiaus">Romos Imperijos amžius</option>
-                  <option value="Pramonės Revoliucija">Pramonės Revoliucija</option>
-                  <option value="XX a. Vidurys">XX a. vidurys</option>
-                  <option value="Viduramžiai Europoje">Viduramžiai Europoje</option>
-                  <option value="Renesansas Italijoje">Renesansas Italijoje</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Laiko mašina</label>
-                <select class="form-control" id="timeMachine" required>
-                  <option value="">Pasirinkite</option>
-                  <option value="DeLorean DMC-12">DeLorean DMC-12</option>
-                  <option value="Laiko kabina">Laiko kabina</option>
-                  <option value="TARDIS">TARDIS</option>
-                  <option value="Chrono-kapsulė">Chrono-kapsulė</option>
-                  <option value="Laiko sūkurys">Laiko sūkurys</option>
-                  <option value="Steampunk laikrodinis vagonėlis">Steampunk laikrodinis vagonėlis</option>
-                  <option value="Laiko traukinys">Laiko traukinys</option>
-                  <option value="Akmeninis portalo žiedas">Akmeninis portalo žiedas</option>
-                  <option value="Laiko lagaminas „The Briefcase“">Laiko lagaminas „The Briefcase“</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Apranga</label>
-                <select class="form-control" id="clothes" required>
-                  <option value="">Pasirinkite</option>
-                  <option value="Istorinė">Istorinė</option>
-                  <option value="Futuristinė">Futuristinė</option>
-                  <option value="Neutral">Neutral</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Apgyvendinimas</label>
-                <select class="form-control" id="lodging" required>
-                  <option value="">Pasirinkite</option>
-                  <option value="Pilies kambarys">Pilies kambarys</option>
-                  <option value="Kosminė stotis">Kosminė stotis</option>
-                  <option value="Miesto apartamentai">Miesto apartamentai</option>
-                </select>
-              </div>
-              <button type="submit" class="btn btn-success">Tęsti</button>
-            </form>
+          <div class="item">
+            <img src="images/s2.png" alt="">
+            <div class="description">Antikinė Graikija</div>
+          </div>
+          <div class="item">
+            <img src="images/s3.png" alt="">
+            <div class="description">Romos Imperijos Aukso Amžius</div>
+          </div>
+          <div class="item">
+            <img src="images/s4.png" alt="">
+            <div class="description">Viduramžiai Europoje</div>
+          </div>
+          <div class="item">
+            <img src="images/s5.png" alt="">
+            <div class="description">Renesansas Italijoje</div>
+          </div>
+          <div class="item">
+            <img src="images/s6.png" alt="">
+            <div class="description">Pramonės revoliucija</div>
+          </div>
+          <div class="item">
+            <img src="images/s7.png" alt="">
+            <div class="description">20 a. vidurys</div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- end order section -->
 
-    <!-- footer section -->
-    <footer class="footer_section">
-      <div class="container">
-        <p>© <span id="displayYear"></span> Visos teisės saugomos</p>
+      <div class="form-group">
+        <label>Laiko mašina</label>
+        <div class="owl-carousel custom-carousel owl-theme" id="machineCarousel">
+          <div class="item">
+            <img src="img/delorean.jpg" alt="DeLorean DMC-12">
+            <div class="description">DeLorean DMC-12</div>
+          </div>
+          <div class="item">
+            <img src="img/tardis.jpg" alt="TARDIS">
+            <div class="description">TARDIS</div>
+          </div>
+          <div class="item">
+            <img src="img/steampunk.jpg" alt="Steampunk laikrodinis vagonėlis">
+            <div class="description">Steampunk vagonėlis</div>
+          </div>
+        </div>
       </div>
-    </footer>
-    <!-- footer section -->
+
+      <div class="form-group">
+        <label>Apranga</label>
+        <div class="owl-carousel custom-carousel owl-theme" id="clothesCarousel">
+          <div class="item">
+            <img src="img/historical.jpg" alt="Istorinė">
+            <div class="description">Istorinė</div>
+          </div>
+          <div class="item">
+            <img src="img/futuristic.jpg" alt="Futuristinė">
+            <div class="description">Futuristinė</div>
+          </div>
+          <div class="item">
+            <img src="img/neutral.jpg" alt="Neutral">
+            <div class="description">Neutral</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Apgyvendinimas</label>
+        <div class="owl-carousel custom-carousel owl-theme" id="lodgingCarousel">
+          <div class="item">
+            <img src="img/castle.jpg" alt="Pilies kambarys">
+            <div class="description">Pilies kambarys</div>
+          </div>
+          <div class="item">
+            <img src="img/space_station.jpg" alt="Kosminė stotis">
+            <div class="description">Kosminė stotis</div>
+          </div>
+          <div class="item">
+            <img src="img/apartment.jpg" alt="Miesto apartamentai">
+            <div class="description">Miesto apartamentai</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button id="continue-btn" class="btn btn-primary continue-btn">Tęsti</button>
+      </div>
+    </form>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
+    $(document).ready(function () {
+      $('.custom-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        items: 1
+      });
+    });
+
     document.getElementById('customTripForm').addEventListener('submit', function (e) {
       e.preventDefault();
-      const trip = `Custom - ${document.getElementById('timePeriod').value} - ${document.getElementById('timeMachine').value} - ${document.getElementById('clothes').value} - ${document.getElementById('lodging').value}`;
+
+      const getActiveText = (carouselId) => {
+        return document.querySelector(`#${carouselId} .owl-item.active .description`).textContent.trim();
+      };
+
+      const trip = `Custom - ${getActiveText('periodCarousel')} - ${getActiveText('machineCarousel')} - ${getActiveText('clothesCarousel')} - ${getActiveText('lodgingCarousel')}`;
       localStorage.setItem('selectedTrip', trip);
       window.location.href = 'payment.html';
     });
   </script>
-</body>
+
+  <footer class="footer_section">
+    <div class="container">
+      <p>© <span id="displayYear"></span> Visos teisės saugomos</p>
+    </div>
+  </footer>
+  </div>
+  </body>
 
 </html>
