@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<!DOCTYPE html>
+<html>
+
 
 
 <!DOCTYPE html>
@@ -19,7 +22,7 @@
   
   
 
-  <title>Laukinės Žąsies Kelionės</title>
+  <title>Laukinės žąsies kelionės</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="../https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -84,20 +87,31 @@
                   <a class="nav-link" href="../order.html">Užsakymas</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link active" href="../keliones.html">Kelionės</a>
-                </li>
-                 <li class="nav-item ">
-                  <a class="nav-link" href="../laiko_masinos.html">Laiko mašinos</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="../laikotarpiai.html">Laikotarpiai</a>
-                </li>
-                <li class="nav-item ">
                   <a class="nav-link" href="../travel_rules.html">Taisyklės</a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="../login.html">Prisijungti</a>
-                </li>
+                <li class="nav-item dropdown active">
+    <a class="nav-link dropdown-toggle" href="#" id="kelionesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Kelionės
+    </a>
+    <div class="dropdown-menu" aria-labelledby="kelionesDropdown">
+      <a class="dropdown-item" href="../keliones.html">Kelionės</a>
+      <a class="dropdown-item" href="../laiko_masinos.html">Laiko mašinos</a>
+      <a class="dropdown-item" href="../wardrobe.html">Drabužiai</a>
+      <a class="dropdown-item" href="../laikotarpiai.html">Laikotarpiai</a>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="profilisDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Profilis
+    </a>
+    <div class="dropdown-menu" aria-labelledby="profilisDropdown">
+      <a class="dropdown-item" href="../login.html">Prisijungti</a>
+      <a class="dropdown-item" href="../register.html">Registruotis</a>
+      <a class="dropdown-item" href="../profile.html">Profilis</a>
+      <a class="dropdown-item" href="../profile_edit.html">Profilio redagavimas</a>
+    </div>
+  </li>
               </ul>
             </div>
           </nav>
@@ -108,6 +122,67 @@
   </div>
 
   <style>
+  .header_top {
+  background-color: #6E85B7 !important; 
+  color: #333333; /* Dark text for contrast */
+}
+
+.quiz_section {
+  background-color: #E0EEFF; /* example: a custom orange */
+}
+
+  /* Hide radio buttons inside buttons */
+.btn input[type="radio"] {
+  display: none;
+}
+
+/* Style for selected/active button */
+.btn.active {
+  background-color: #FCDC54;
+  color: #1c1c1c;
+  border: 2px solid #8AA0D0;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for quiz buttons (before active) */
+.btn:hover {
+  background-color: #FFE588;  /* lighter yellow on hover */
+  color: #000000;
+  border: 2px solid #B0C4DE;
+  cursor: pointer;
+}
+
+/* Active nav link */
+.nav-link.active,
+.nav-item.active .nav-link {
+  color: #FCDC54 !important;
+  background-color: #8AA0D0 !important;
+  border: 2px solid #F8F9D7;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  background-color: #DCE6FF;  /* light blue on hover */
+  color: #34578C !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ .rotating-logo {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+    <!-- end header section -->
+  </div>
+<style>
   .header_top {
   background-color: #6E85B7 !important; 
   color: #333333; /* Dark text for contrast */
@@ -260,7 +335,7 @@ Trečiąją dieną laukia gotikinės architektūros pamokos ir vitražų dirbtuv
                               Kelionių laiku taisyklės
                             </a>
                         </div>
-                        <a href="book.html" class="btn btn-primary mt-4">Užsakyti kelionę</a>
+                        <a href="../payment.html" class="btn btn-primary mt-4">Užsakyti kelionę</a>
                     </div>
                 </div>
             </div>
@@ -279,5 +354,10 @@ Trečiąją dieną laukia gotikinės architektūros pamokos ir vitražų dirbtuv
   <!-- footer section -->
 
 </body>
-
+<!-- jQuery -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="../js/bootstrap.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/custom.js"></script>
 </html>

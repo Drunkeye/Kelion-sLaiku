@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 
+<!DOCTYPE html>
+<html>
+
 
 
 <!DOCTYPE html>
@@ -19,7 +22,7 @@
   
   
 
-  <title>Laukinės Žąsies Kelionės</title>
+  <title>Laukinės žąsies kelionės</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="../https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -84,20 +87,31 @@
                   <a class="nav-link" href="../order.html">Užsakymas</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link active" href="../keliones.html">Kelionės</a>
-                </li>
-                 <li class="nav-item ">
-                  <a class="nav-link" href="../laiko_masinos.html">Laiko mašinos</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="../laikotarpiai.html">Laikotarpiai</a>
-                </li>
-                <li class="nav-item ">
                   <a class="nav-link" href="../travel_rules.html">Taisyklės</a>
                 </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="../login.html">Prisijungti</a>
-                </li>
+                <li class="nav-item dropdown active">
+    <a class="nav-link dropdown-toggle" href="#" id="kelionesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Kelionės
+    </a>
+    <div class="dropdown-menu" aria-labelledby="kelionesDropdown">
+      <a class="dropdown-item" href="../keliones.html">Kelionės</a>
+      <a class="dropdown-item" href="../laiko_masinos.html">Laiko mašinos</a>
+      <a class="dropdown-item" href="../wardrobe.html">Drabužiai</a>
+      <a class="dropdown-item" href="../laikotarpiai.html">Laikotarpiai</a>
+    </div>
+  </li>
+
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="profilisDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Profilis
+    </a>
+    <div class="dropdown-menu" aria-labelledby="profilisDropdown">
+      <a class="dropdown-item" href="../login.html">Prisijungti</a>
+      <a class="dropdown-item" href="../register.html">Registruotis</a>
+      <a class="dropdown-item" href="../profile.html">Profilis</a>
+      <a class="dropdown-item" href="../profile_edit.html">Profilio redagavimas</a>
+    </div>
+  </li>
               </ul>
             </div>
           </nav>
@@ -261,7 +275,7 @@ Ketvirtąją dieną – atsisveikinimo ceremonija ir kelionė atgal į dabartį.
                               Kelionių laiku taisyklės
                             </a>
                         </div>
-                        <a href="book.html" class="btn btn-primary mt-4">Užsakyti kelionę</a>
+                        <a href="../payment.html" class="btn btn-primary mt-4">Užsakyti kelionę</a>
                     </div>
                 </div>
             </div>
@@ -269,16 +283,23 @@ Ketvirtąją dieną – atsisveikinimo ceremonija ir kelionė atgal į dabartį.
         <section>
 
   <!-- info section -->
-   <!-- footer section -->
+  <!-- footer section -->
    <footer class="footer_section">
       <div class="container">
         <p>© <span id="displayYear"></span> Visos teisės saugomos.</p>
       </div>
     </footer>
-    <!-- footer section -->
+  <!-- footer section -->
   </div>
   <!-- footer section -->
+  <!-- jQuery -->
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <!-- Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="../js/bootstrap.js"></script>
+  <!-- Custom JS -->
+  <script src="../js/custom.js"></script>
 
 </body>
-
 </html>
