@@ -234,7 +234,68 @@
 }
 
 </style>
-    <!-- End Header -->
+    <!-- end header section -->
+  </div>
+<style>
+  .header_top {
+  background-color: #6E85B7 !important; 
+  color: #333333; /* Dark text for contrast */
+}
+
+.quiz_section {
+  background-color: #E0EEFF; /* example: a custom orange */
+}
+
+  /* Hide radio buttons inside buttons */
+.btn input[type="radio"] {
+  display: none;
+}
+
+/* Style for selected/active button */
+.btn.active {
+  background-color: #FCDC54;
+  color: #1c1c1c;
+  border: 2px solid #8AA0D0;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for quiz buttons (before active) */
+.btn:hover {
+  background-color: #FFE588;  /* lighter yellow on hover */
+  color: #000000;
+  border: 2px solid #B0C4DE;
+  cursor: pointer;
+}
+
+/* Active nav link */
+.nav-link.active,
+.nav-item.active .nav-link {
+  color: #FCDC54 !important;
+  background-color: #8AA0D0 !important;
+  border: 2px solid #F8F9D7;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  background-color: #DCE6FF;  /* light blue on hover */
+  color: #34578C !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ .rotating-logo {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+    <!-- end header section -->
   </div>
   
   
@@ -250,21 +311,9 @@
 		
 		<!-- ISTORINIAI DRABUŽIAI PRIE MISIJŲ -->
 
-		<!-- Renesanso drabužiai -->
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/renaissance_woman.jpg" class="card-img-top mb-3" alt="Renesanso moteriška suknelė">
-			<h4>Renesanso damos suknelė</h4>
-			<p><strong>Laikotarpis:</strong> XV–XVI a. (Renesansas)</p>
-			<p><strong>Lytis:</strong> Moteriškas</p>
-			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL</p>
-			<p><strong>Proga:</strong> Menininko dirbtuvė, paradas, dvaro pobūvis</p>
-		  </div>
-		</div>
-
-		<div class="col-md-4 mb-4">
-		  <div class="card h-100 p-3">
-			<img src="images/renaissance_man.jpg" class="card-img-top mb-3" alt="Renesanso vyriškas kostiumas">
+			<img src="images/RenaissanceMan.jpg" class="card-img-top mb-3" alt="Renesanso vyriškas kostiumas">
 			<h4>Renesanso vyriškas ansamblis</h4>
 			<p><strong>Laikotarpis:</strong> XV–XVI a.</p>
 			<p><strong>Lytis:</strong> Vyriškas</p>
@@ -276,7 +325,7 @@
 		<!-- Senovės Egiptas -->
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/egypt_woman.jpg" class="card-img-top mb-3" alt="Egiptietiška moters tunika">
+			<img src="images/EgyptWoman.jpg" class="card-img-top mb-3" alt="Egiptietiška moters tunika">
 			<h4>Egiptietiška šventikės suknelė</h4>
 			<p><strong>Laikotarpis:</strong> Apie 1500 m. pr. Kr.</p>
 			<p><strong>Lytis:</strong> Moteriškas</p>
@@ -285,22 +334,23 @@
 		  </div>
 		</div>
 
+		<!-- Pramonės revoliucija -->
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/egypt_man.jpg" class="card-img-top mb-3" alt="Egiptietiškas vyrų kostiumas">
-			<h4>Egiptiečio apeiginė apranga</h4>
-			<p><strong>Laikotarpis:</strong> Apie 1500 m. pr. Kr.</p>
-			<p><strong>Lytis:</strong> Vyriškas</p>
-			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL</p>
-			<p><strong>Proga:</strong> Piramidžių statybvietė, religiniai ritualai</p>
+			<img src="images/VictorianDress2.jpg" class="card-img-top mb-3" alt="Viktorijos laikų suknelė">
+			<h4>Viktorijos epochos moters suknelė</h4>
+			<p><strong>Laikotarpis:</strong> XIX a.</p>
+			<p><strong>Lytis:</strong> Moteriškas</p>
+			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
+			<p><strong>Proga:</strong> Fotografavimasis, tekstilės fabrikų vizitai</p>
 		  </div>
 		</div>
 
 		<!-- Mėnulio nusileidimas -->
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/moon_suit.jpg" class="card-img-top mb-3" alt="Astronautės kostiumas">
-			<h4>Astronautės kostiumas</h4>
+			<img src="images/MoonSuit.jpg" class="card-img-top mb-3" alt="Astronautės kostiumas">
+			<h4>Astronauto kostiumas</h4>
 			<p><strong>Laikotarpis:</strong> 1969 m.</p>
 			<p><strong>Lytis:</strong> Moteriškas</p>
 			<p><strong>Dydžiai:</strong> S, M, L</p>
@@ -310,41 +360,31 @@
 
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/moon_suit.jpg" class="card-img-top mb-3" alt="Astronautų kostiumas">
-			<h4>Astronautų kostiumas (Apollo)</h4>
-			<p><strong>Laikotarpis:</strong> 1969 m.</p>
-			<p><strong>Lytis:</strong> Vyriškas</p>
+			<img src="images/VictorianDress1.jpg" class="card-img-top mb-3" alt="Viktorijos laikų suknelė">
+			<h4>Viktorijos epochos moters suknelė</h4>
+			<p><strong>Laikotarpis:</strong> XIX a.</p>
+			<p><strong>Lytis:</strong> Moteriškas</p>
+			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
+			<p><strong>Proga:</strong> Fotografavimasis, tekstilės fabrikų vizitai</p>
+		  </div>
+		</div>
+
+
+		<!-- Senovės Graikija -->
+		<div class="col-md-4 mb-4">
+		  <div class="card h-100 p-3">
+			<img src="images/GreekWoman1.jpg" class="card-img-top mb-3" alt="Graikės chitonas">
+			<h4>Antikinės Graikijos chitonas</h4>
+			<p><strong>Laikotarpis:</strong> V a. pr. Kr.</p>
+			<p><strong>Lytis:</strong> Moteriškas</p>
 			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL</p>
-			<p><strong>Proga:</strong> Kosminės misijos inscenizacija</p>
-		  </div>
-		</div>
-
-		<!-- Pramonės revoliucija -->
-		<div class="col-md-4 mb-4">
-		  <div class="card h-100 p-3">
-			<img src="images/victorian_dress_1.jpg" class="card-img-top mb-3" alt="Viktorijos laikų suknelė">
-			<h4>Viktorijos epochos moters suknelė</h4>
-			<p><strong>Laikotarpis:</strong> XIX a.</p>
-			<p><strong>Lytis:</strong> Moteriškas</p>
-			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
-			<p><strong>Proga:</strong> Fotografavimasis, tekstilės fabrikų vizitai</p>
-		  </div>
-		</div>
-		
-		<div class="col-md-4 mb-4">
-		  <div class="card h-100 p-3">
-			<img src="images/victorian_dress_2.jpg" class="card-img-top mb-3" alt="Viktorijos laikų suknelė">
-			<h4>Viktorijos epochos moters suknelė</h4>
-			<p><strong>Laikotarpis:</strong> XIX a.</p>
-			<p><strong>Lytis:</strong> Moteriškas</p>
-			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
-			<p><strong>Proga:</strong> Fotografavimasis, tekstilės fabrikų vizitai</p>
+			<p><strong>Proga:</strong> Teatras, šventė Atėnuose</p>
 		  </div>
 		</div>
 
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/victorian_suit.jpg" class="card-img-top mb-3" alt="Viktorijos vyriškas kostiumas">
+			<img src="images/VictorianSuit.jpg" class="card-img-top mb-3" alt="Viktorijos vyriškas kostiumas">
 			<h4>Viktorijos epochos vyriškas kostiumas</h4>
 			<p><strong>Laikotarpis:</strong> XIX a.</p>
 			<p><strong>Lytis:</strong> Vyriškas</p>
@@ -353,50 +393,55 @@
 		  </div>
 		</div>
 
-		<!-- Senovės Graikija -->
-		<div class="col-md-4 mb-4">
-		  <div class="card h-100 p-3">
-			<img src="images/greek_woman_1.jpg" class="card-img-top mb-3" alt="Graikės chitonas">
-			<h4>Antikinės Graikijos chitonas</h4>
-			<p><strong>Laikotarpis:</strong> V a. pr. Kr.</p>
-			<p><strong>Lytis:</strong> Moteriškas</p>
-			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL</p>
-			<p><strong>Proga:</strong> Teatras, šventė Atėnuose</p>
-		  </div>
-		</div>
 		
+
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/greek_woman_2.jpg" class="card-img-top mb-3" alt="Graikės chitonas">
-			<h4>Antikinės Graikijos chitonas</h4>
+			<img src="images/GreekMan1.jpg" class="card-img-top mb-3" alt="Graikiška tunika vyrui">
+			<h4>Senovės Graikų tunika</h4>
 			<p><strong>Laikotarpis:</strong> V a. pr. Kr.</p>
+			<p><strong>Lytis:</strong> Vyriškas</p>
+			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
+			<p><strong>Proga:</strong> Diskusijos su filosofais, olimpinės žaidynės</p>
+		  </div>
+		</div>
+
+		<div class="col-md-4 mb-4">
+		  <div class="card h-100 p-3">
+			<img src="images/GreekMan2.jpg" class="card-img-top mb-3" alt="Graikiška tunika vyrui">
+			<h4>Senovės Graikų tunika</h4>
+			<p><strong>Laikotarpis:</strong> V a. pr. Kr.</p>
+			<p><strong>Lytis:</strong> Vyriškas</p>
+			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
+			<p><strong>Proga:</strong> Diskusijos su filosofais, olimpinės žaidynės</p>
+		  </div>
+		</div>	
+		
+		<!-- Renesanso drabužiai -->
+		<div class="col-md-4 mb-4">
+		  <div class="card h-100 p-3">
+			<img src="images/RenaissanceWoman.jpg" class="card-img-top mb-3" alt="Renesanso moteriška suknelė">
+			<h4>Renesanso damos suknelė</h4>
+			<p><strong>Laikotarpis:</strong> XV–XVI a. (Renesansas)</p>
 			<p><strong>Lytis:</strong> Moteriškas</p>
 			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL</p>
-			<p><strong>Proga:</strong> Teatras, šventė Atėnuose</p>
+			<p><strong>Proga:</strong> Menininko dirbtuvė, paradas, dvaro pobūvis</p>
 		  </div>
 		</div>
 
-		<div class="col-md-4 mb-4">
-		  <div class="card h-100 p-3">
-			<img src="images/greek_man_1.jpg" class="card-img-top mb-3" alt="Graikiška tunika vyrui">
-			<h4>Senovės Graikų tunika</h4>
-			<p><strong>Laikotarpis:</strong> V a. pr. Kr.</p>
-			<p><strong>Lytis:</strong> Vyriškas</p>
-			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
-			<p><strong>Proga:</strong> Diskusijos su filosofais, olimpinės žaidynės</p>
-		  </div>
-		</div>
+		
+
 
 		<div class="col-md-4 mb-4">
 		  <div class="card h-100 p-3">
-			<img src="images/greek_man_2.jpg" class="card-img-top mb-3" alt="Graikiška tunika vyrui">
-			<h4>Senovės Graikų tunika</h4>
-			<p><strong>Laikotarpis:</strong> V a. pr. Kr.</p>
+			<img src="images/EgyptMan.jpg" class="card-img-top mb-3" alt="Egiptietiškas vyrų kostiumas">
+			<h4>Egiptiečio apeiginė apranga</h4>
+			<p><strong>Laikotarpis:</strong> Apie 1500 m. pr. Kr.</p>
 			<p><strong>Lytis:</strong> Vyriškas</p>
-			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL, XXXL</p>
-			<p><strong>Proga:</strong> Diskusijos su filosofais, olimpinės žaidynės</p>
+			<p><strong>Dydžiai:</strong> S, M, L, XL, XXL</p>
+			<p><strong>Proga:</strong> Piramidžių statybvietė, religiniai ritualai</p>
 		  </div>
-		</div>		
+		</div>
 
 	
 		
@@ -407,13 +452,14 @@
 	
   <!-- End Wardrobe Section -->
   
-  <!-- Footer Info -->
-   <footer class="footer_section">
-      <div class="container">
-        <p>© <span id="displayYear"></span> Visos teisės saugomos.</p>
-      </div>
-    </footer>
-    <!-- footer section -->
+
+
+  <!-- Footer -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>&copy; <span id="displayDateYear"></span> Visos teisės saugomos.</p>
+    </div>
+  </footer>
 
   <!-- Scripts -->
   <script src="js/jquery-3.4.1.min.js"></script>
